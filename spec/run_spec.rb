@@ -1,3 +1,6 @@
+# spec/run.rb
+require 'run'
+
 describe Run do
 
   describe "attributes" do
