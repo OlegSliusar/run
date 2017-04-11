@@ -1,7 +1,11 @@
 # lib/run.rb
+
 class Run
+  require 'date'
+  
   def initialize(input)
     @run_data = input
+    @run_data[:timestamp] = DateTime.parse(@run_data[:timestamp])
   end
 
   def duration

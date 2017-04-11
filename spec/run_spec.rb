@@ -14,5 +14,11 @@ describe Run do
     it { is_expected.to respond_to(:duration) }
     it { is_expected.to respond_to(:distance) }
     it { is_expected.to respond_to(:timestamp) }
+
+    describe "#timestamp" do
+      it "returns a DateTime" do
+        expect(subject.timestamp).to be_a(DateTime)
+      end
+    end
   end
 end
